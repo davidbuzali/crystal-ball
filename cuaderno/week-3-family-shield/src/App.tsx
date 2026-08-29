@@ -95,7 +95,11 @@ function App() {
     const resetScroll = () => window.scrollTo({ top: 0, left: 0, behavior: "auto" });
     resetScroll();
     const frame = window.requestAnimationFrame(resetScroll);
-    return () => window.cancelAnimationFrame(frame);
+    const timeout = window.setTimeout(resetScroll, 100);
+    return () => {
+      window.cancelAnimationFrame(frame);
+      window.clearTimeout(timeout);
+    };
   }, [step]);
 
   function reset() {
