@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="1080" viewBox="0 0 760 1080" role="img" aria-labelledby="title desc">
+  <title id="title">Mensaje urgente ficticio para practicar Family Shield</title>
+  <desc id="desc">Un mensaje ficticio afirma que Diego necesita veinte mil pesos en treinta minutos.</desc>
+  <rect width="760" height="1080" fill="#e9ece8"/>
+  <rect x="40" y="34" width="680" height="1012" rx="34" fill="#f8f6ef" stroke="#12334d" stroke-width="4"/>
+  <rect x="40" y="34" width="680" height="150" rx="34" fill="#12334d"/>
+  <rect x="40" y="138" width="680" height="46" fill="#12334d"/>
+  <circle cx="112" cy="108" r="38" fill="#fff" opacity="0.95"/>
+  <circle cx="112" cy="98" r="12" fill="#12334d"/>
+  <path d="M86 135c4-20 18-31 26-31s22 11 26 31" fill="#12334d"/>
+  <text x="170" y="101" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#fff">Número no guardado</text>
+  <text x="170" y="140" font-family="Arial, Helvetica, sans-serif" font-size="21" fill="#d7e3e8">Mensaje de práctica · 11:42 a. m.</text>
+
+  <rect x="84" y="222" width="592" height="680" rx="28" fill="#ffffff" stroke="#d7d7cf" stroke-width="2"/>
+  <text x="120" y="284" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#17212b">Mamá, soy Diego.</text>
+  <text x="120" y="336" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#17212b">
+    <tspan x="120" dy="0">Tuve un accidente y estoy en el</tspan>
+    <tspan x="120" dy="38">Ministerio Público. Estoy escribiendo</tspan>
+    <tspan x="120" dy="38">desde el teléfono de un abogado</tspan>
+    <tspan x="120" dy="38">porque me quitaron el mío.</tspan>
+  </text>
+  <text x="120" y="530" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#17212b">
+    <tspan x="120" dy="0">Necesito que transfieras</tspan>
+    <tspan x="120" dy="38" font-weight="700">$20,000 pesos en los próximos</tspan>
+    <tspan x="120" dy="38" font-weight="700">30 minutos</tspan>
+    <tspan dy="0" font-weight="400"> para que me dejen salir.</tspan>
+    <tspan x="120" dy="38">No me marques porque no puedo</tspan>
+    <tspan x="120" dy="38">contestar. Nuestra palabra es</tspan>
+    <tspan x="120" dy="38" font-weight="700">JACARANDA.</tspan>
+  </text>
+  <text x="120" y="798" font-family="Arial, Helvetica, sans-serif" font-size="25" fill="#17212b">
+    <tspan x="120" dy="0">Te mando la cuenta por aquí.</tspan>
+    <tspan x="120" dy="38">Por favor hazlo ya y mándame</tspan>
+    <tspan x="120" dy="38">el comprobante.</tspan>
+  </text>
+
+  <rect x="84" y="942" width="592" height="70" rx="18" fill="#fff1d5" stroke="#b66a00" stroke-width="2"/>
+  <text x="380" y="987" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#7b4100">CASO FICTICIO · SOLO PARA PRÁCTICA</text>
+</svg>
