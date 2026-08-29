@@ -46,9 +46,22 @@ Run the Elena persona test in a fresh conversation using the prompt in `PACKET.m
 - Evaluated only what appeared on each 390 x 844 px screen so implementation knowledge could not excuse unclear interface behavior.
 - Found a high-severity transition defect: the organized-summary and verification screens inherited the previous mobile scroll position, partially hiding the top stop banner.
 - Added a step-change scroll reset and repeated it on the next animation frame so the safety banner remains the first visible content after navigation.
-- Retested both affected transitions locally at 390 x 844 px; the full "NO PAGUES TODAVÍA" banner now appears on entry.
+- The first public correction attempt showed that verification could restore the old position after that frame, even though the local retest passed. Added a final 100 ms reset and treated the intermediate build as unaccepted rather than closing the checkpoint prematurely.
+- Retested both affected transitions locally and on the public Vercel alias at 390 x 844 px; the full "NO PAGUES TODAVÍA" banner now appears on entry.
 - Logged "PROTOCOLO ONLY" as a medium-severity localization opportunity, but kept it in this slice because the surrounding Spanish copy makes the required behavior explicit and the course packet uses that label.
 
 ### Tomorrow's first move
 
 Publish Deployment 2, repeat the corrected transitions at the public URL, finalize `PERSONA_davidbuzali.pdf`, and close the Week 3 checkpoint.
+
+## 2026-08-29 - Deployment 2 close
+
+- Accepted commit `e3c2be0` as the corrected Deployment 2 source.
+- Verified the organized-summary and independent-verification entries at 390 x 844 px on https://family-shield-week-3.vercel.app.
+- Confirmed the production build remains visibly labeled as simulated analysis.
+- Preserved the canonical public alias while Vercel promoted the corrected production deployment.
+- Closed the persona checkpoint with 15 passing safety tests and the final persona PDF.
+
+### Tomorrow's first move
+
+Package the Week 3 submission links and artifacts, then begin the next course checkpoint without expanding Family Shield beyond its declared scope.

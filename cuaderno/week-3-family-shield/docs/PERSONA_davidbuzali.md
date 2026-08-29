@@ -28,21 +28,21 @@ Elena's evaluation stance was: read carefully, assume a frightened relative may 
 
 The organized-summary and independent-verification screens retained the previous page's mobile scroll position. The defect could cause Elena to miss the strongest safety instruction at precisely the moment she moved from reading the suspicious request to acting on it.
 
-The correction resets the window to the top on every flow-step change and repeats the reset on the next animation frame. This keeps the complete "NO PAGUES TODAVÍA" banner visible when each new screen opens.
+The correction resets the window to the top on every flow-step change, repeats the reset on the next animation frame, and performs a final reset after 100 ms. The delay was added when the first public correction attempt showed that the verification transition could restore the old scroll position after the animation frame. This keeps the complete "NO PAGUES TODAVÍA" banner visible when each new screen opens.
 
 ## Retest
 
 The affected transitions were repeated locally at 390 x 844 px after the correction:
 
-- Upload to organized summary: passed. The complete stop banner is visible first.
-- Organized summary to independent verification: passed. The complete stop banner and verification heading are visible on entry.
+- Upload to organized summary: passed locally and on Deployment 2. The complete stop banner is visible first.
+- Organized summary to independent verification: passed locally and on Deployment 2. The complete stop banner and verification heading are visible on entry.
 - Existing safety suite: passed, 15 of 15 tests.
 - Production build: passed.
 
-![Corrected verification-screen entry](assets/test-06-persona-scroll-retest.jpg)
+![Corrected public verification-screen entry](assets/test-07-deployment2-public.jpg)
 
 ## Persona success decision
 
 The persona walkthrough passes its behavioral criteria. Elena understands that the AI did not authenticate Diego, the family word does not authorize payment, verification must use a previously established contact, and Protocol Only means waiting is the correct protective action rather than a personal failure.
 
-Deployment 2 will be recorded after the corrected public URL is verified.
+Deployment 2 is live at https://family-shield-week-3.vercel.app from source commit `e3c2be0`.
