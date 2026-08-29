@@ -9,6 +9,7 @@
 | UI-01 | 2026-08-29 | Local, 390 x 844 px | Complete central fictional practice path | Summary is readable and verification begins without coaching | Passed with no console errors | Passed | `docs/assets/test-01-upload.png`, `test-02-summary.png`, `test-03-verify.png` | - | Passed |
 | UI-02 | 2026-08-29 | Local, 390 x 844 px | Mark every trusted contact unavailable | Final state is Protocol Only and contains no payment action | Reached Protocol Only after Diego, Laura, and Roberto were unavailable | Passed | `docs/assets/test-04-protocol-only.png` | - | Passed |
 | ACCESS-01 | 2026-08-29 | Local accessibility inspection | Every interactive control is keyboard-focusable and shows focus | All controls had `tabIndex=0`, but the clipped file input did not project a visible focus indicator onto its upload card | Fixed | `docs/assets/test-05-upload-focus.png` and DOM inspection | Added `:focus-within` styling to the upload card | Focused input now produces a visible 4 px amber outline; passed |
+| DEPLOY-01 | 2026-08-29 | Deployment 1, Vercel production, 390 x 844 px | Run the central fictional case from the public URL and choose “No pude confirmar con nadie” | The simulated analysis is visibly labeled, no payment action appears, and the flow ends at Protocol Only | Public production flow passed from practice-case load through `PROTOCOLO ONLY`; no private data used | Passed | [Deployment 1](https://family-shield-week-3.vercel.app) | A dedicated Vercel project was created because the existing repository-level project expected a package manifest at the repository root | Passed |
 
 ## Persona-test preparation
 
@@ -32,5 +33,5 @@ Use the persona prompt from `PACKET.md` and log every confusion below.
 
 | Deployment | URL | Commit | Analysis mode | Date | Notes |
 |---|---|---|---|---|---|
-| Deployment 1 | Pending | Pending | Simulated or live, visibly labeled | Pending | Complete testable slice |
+| Deployment 1 | https://family-shield-week-3.vercel.app | `48faac1` | Simulated, visibly labeled | 2026-08-29 | Public mobile flow verified through Protocol Only at 390 x 844 px |
 | Deployment 2 | Pending | Pending | Simulated or live, visibly labeled | Pending | Mechanical and persona correction |

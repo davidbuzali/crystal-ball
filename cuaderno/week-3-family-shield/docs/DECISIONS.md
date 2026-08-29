@@ -27,3 +27,15 @@ Run the corrected build, commit the complete testable slice, and create Deployme
 ### Tomorrow's first move
 
 Deploy the labeled simulated slice, run the mechanical test plan at the live URL, and prepare the fresh-chat persona test.
+
+## 2026-08-29 - Deployment 1 close
+
+- Published the complete working slice at https://family-shield-week-3.vercel.app.
+- Kept Deployment 1 in visibly labeled simulated-analysis mode so the public checkpoint is testable without presenting generated output as live AI analysis.
+- Created a dedicated `family-shield-week-3` Vercel project after the existing repository-level `crystal-ball` project attempted to build from the repository root.
+- Re-ran the central fictional case at 390 x 844 px on the public production URL.
+- Verified that the unconfirmed-contact branch ends at Protocol Only and never exposes a payment action.
+
+### Tomorrow's first move
+
+Run the Elena persona test in a fresh conversation using the prompt in `PACKET.md`, record every hesitation in `docs/TESTING.md`, implement the highest-severity correction, and publish Deployment 2.
