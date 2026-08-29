@@ -91,6 +91,13 @@ function App() {
     return () => URL.revokeObjectURL(nextUrl);
   }, [file]);
 
+  useEffect(() => {
+    const resetScroll = () => window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    resetScroll();
+    const frame = window.requestAnimationFrame(resetScroll);
+    return () => window.cancelAnimationFrame(frame);
+  }, [step]);
+
   function reset() {
     setStep("start");
     setFile(null);

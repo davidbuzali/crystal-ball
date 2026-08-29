@@ -39,3 +39,16 @@ Deploy the labeled simulated slice, run the mechanical test plan at the live URL
 ### Tomorrow's first move
 
 Run the Elena persona test in a fresh conversation using the prompt in `PACKET.md`, record every hesitation in `docs/TESTING.md`, implement the highest-severity correction, and publish Deployment 2.
+
+## 2026-08-29 - Persona walkthrough correction
+
+- Ran the Elena persona walkthrough in the existing working conversation at the student's request and documented the loss of fresh-context independence as a method limitation.
+- Evaluated only what appeared on each 390 x 844 px screen so implementation knowledge could not excuse unclear interface behavior.
+- Found a high-severity transition defect: the organized-summary and verification screens inherited the previous mobile scroll position, partially hiding the top stop banner.
+- Added a step-change scroll reset and repeated it on the next animation frame so the safety banner remains the first visible content after navigation.
+- Retested both affected transitions locally at 390 x 844 px; the full "NO PAGUES TODAVÍA" banner now appears on entry.
+- Logged "PROTOCOLO ONLY" as a medium-severity localization opportunity, but kept it in this slice because the surrounding Spanish copy makes the required behavior explicit and the course packet uses that label.
+
+### Tomorrow's first move
+
+Publish Deployment 2, repeat the corrected transitions at the public URL, finalize `PERSONA_davidbuzali.pdf`, and close the Week 3 checkpoint.
