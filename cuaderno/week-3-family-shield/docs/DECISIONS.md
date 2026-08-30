@@ -65,3 +65,16 @@ Publish Deployment 2, repeat the corrected transitions at the public URL, finali
 ### Tomorrow's first move
 
 Package the Week 3 submission links and artifacts, then begin the next course checkpoint without expanding Family Shield beyond its declared scope.
+
+## 2026-08-30 - Video script close
+
+- Prepared `docs/DEMO_SCRIPT.md` around the assignment's three-minute live walkthrough and final thirty-second reflection.
+- Matched screen directions to the shipped Spanish interface and the fictional Diego / MXN $20,000 / 30-minute practice case.
+- Explicitly distinguished the deployed preset analysis and simulated calls from live AI extraction and real phone calls.
+- Used the documented scroll-position correction for the testing explanation without claiming an independent fresh-chat or real-user evaluation.
+- Kept the script in Markdown so the final submission set remains exactly three PDFs plus the separate video.
+- Included the separate Week 3 GitHub repository and preserved the existing coursework archive.
+
+### Tomorrow's first move
+
+Rehearse the script against the live Vercel URL, personalize the final reflection, and record `DEMO_davidbuzali.mp4` with the final 30 seconds reserved for what changed my mind.
